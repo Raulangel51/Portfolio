@@ -1,0 +1,47 @@
+.HomePage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+.hero-text {
+  color: white;
+  margin-left: 25%;
+  
+  .styles_typicalWrapper__1_Uvh {
+    color: #037fff;
+  }
+}
+
+.hp-sub-text {
+  text-align: center; /* Pendiente revisar si se mira mejor al centro o a la izquierda*/
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 0;
+  
+  .icon-holder {
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+    .icon {
+      transition: all .4s ease-in-out;
+      font-size: 2.3rem; /* revisar tamaño */ 
+      color: #a4acc4;
+    }
+    .fb:hover {
+      color: rgb(39, 39, 190);
+    }
+    .gh:hover {
+      color: purple;
+    }
+    .insta:hover {
+      color: rgb(214, 82, 155);
+    }
+  }
+}
