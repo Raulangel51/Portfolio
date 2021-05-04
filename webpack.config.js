@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 const path = require('path')
 
 module.exports = {
@@ -47,12 +48,14 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      favicon: './assets/Images/logo.png',
       inject: false,
       templateContent: () => `
         <html>
           <head>
             <title>Portafolio RJ</title>
             <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link rel="shortcut icon" type="image/png/ico" href="/logo.png" />
             <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700&display=swap" rel="stylesheet">
           </head>
           <body>
@@ -62,6 +65,7 @@ module.exports = {
         </html>
       `,
     }),
+    new FaviconsWebpackPlugin('./assets/Images/logo.png'),
     new MiniCssExtractPlugin({}),
   ],
 }

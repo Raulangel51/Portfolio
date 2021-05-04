@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import picture from '../../../assets/Jimenez RaulAngel04_RMussapp.jpg'
+import picture from '../../../assets/Images/Jimenez RaulAngel04_RMussapp.jpg'
 
 const NavBar = () => {
   const h = 'jj'

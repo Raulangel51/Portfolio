@@ -40,6 +40,7 @@
     "eslint-plugin-html": "^6.1.2",
     "eslint-plugin-jest": "^24.3.6",
     "eslint-webpack-plugin": "^2.5.4",
+    "favicons-webpack-plugin": "^5.0.2",
     "file-loader": "^6.2.0",
     "firebase": "^8.4.3",
     "html-webpack-plugin": "^5.3.1",
