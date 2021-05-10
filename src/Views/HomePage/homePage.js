@@ -11,25 +11,27 @@ const HomePage = () => {
   return (
     <div className="HomePage">
       <header className="hero">
-        <h1 className="hero-text">
-          Hi, I&apos;m Raul Angel J.
-          {' '}
-          <Typical
-            className="dynamic"
-            loop={Infinity}
-            wrapper="b"
-            steps={[
-              'Software Engineer 🌐',
-              1000,
-              'Web Developer 💻',
-              1000,
-              'Visionary ⚡',
-              1000,
-              'Freelancer',
-              1000,
-            ]}
-          />
-        </h1>
+        <div className="hero-text-container">
+          <h1 className="hero-text">
+            Hi, I&apos;m Raul Angel J.
+            {' '}
+            <Typical
+              className="dynamic"
+              loop={Infinity}
+              wrapper="b"
+              steps={[
+                'Software Engineer',
+                1000,
+                'Web Developer 💻',
+                1000,
+                'Visionary ⚡',
+                1000,
+                'Freelancer 🌐',
+                1000,
+              ]}
+            />
+          </h1>
+        </div>
         <p className="hp-sub-text">
           Knack of building applications with front and back end operations.
         </p>

@@ -14,5 +14,10 @@
     background-color: #10121b;
     min-height: 100vh;
     background-image: url(../../assets/Images/dots.svg);
+    display: grid;
+    position: relative;
+    .content {
+      margin: 5rem 15rem;
+    }
   }
 }

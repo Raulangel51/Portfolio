@@ -1,12 +1,13 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
+import Title from '../../components/title/title'
 
 const AboutPage = () => {
   const a = 'a'
 
   return (
     <div className="AboutPage">
-      <h1>Aboute page</h1>
+      <Title title="About Me" span="About Me" />
     </div>
   )
 }

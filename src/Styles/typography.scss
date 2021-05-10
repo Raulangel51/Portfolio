@@ -6,12 +6,15 @@
   width: 80%;
 }
 
-.hero-text {
-  color: white;
-  margin-left: 25%;
-  
-  .styles_typicalWrapper__1_Uvh {
-    color: #037fff;
+.hero-text-container {
+  align-self: center;
+  width: 765px;
+  margin:auto;
+  .hero-text {
+    color: white;    
+    .styles_typicalWrapper__1_Uvh {
+      color: #037fff;
+    }
   }
 }
 
