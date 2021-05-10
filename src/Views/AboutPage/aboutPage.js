@@ -10,6 +10,7 @@ const AboutPage = () => {
     <div className="AboutPage">
       <Title title="About Me" span="About Me" />
       <ImageSection />
+      <Title title="My Skills" span="My Skills" />
     </div>
   )
 }
