@@ -2,6 +2,7 @@
 @import '../Styles/navBar.scss';
 @import '../Styles/typography.scss';
 @import '../Styles/title.scss';
+@import '../Styles/about.scss';
 
 *{
   padding: 0;
