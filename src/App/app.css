@@ -3,6 +3,8 @@
 @import '../Styles/typography.scss';
 @import '../Styles/title.scss';
 @import '../Styles/about.scss';
+@import '../Styles/skill.scss';
+@import '../components/ServicesSection/services.scss';
 
 *{
   padding: 0;

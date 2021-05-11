@@ -41,9 +41,12 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: 'bundle.js',
+    publicPath: '/',
   },
   devServer: {
+    open: true,
     contentBase: path.resolve(__dirname, './dist'),
+    historyApiFallback: true,
     stats: 'minimal',
   },
   plugins: [
