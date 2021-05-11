@@ -3,8 +3,8 @@ import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import NavBar from '../components/NavBar/navBar'
 import HomePage from '../Views/HomePage/homePage'
-import './app.css'
 import AboutPage from '../Views/AboutPage/aboutPage'
+import './app.css'
 
 const App = () => {
   const h = 'hola'
@@ -20,7 +20,7 @@ const App = () => {
             <Route exact path="/">
               <HomePage />
             </Route>
-            <Route exat path="/About">
+            <Route exact path="/About">
               <AboutPage />
             </Route>
           </Switch>
