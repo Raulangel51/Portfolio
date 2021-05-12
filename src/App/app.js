@@ -4,7 +4,9 @@ import { Switch, Route } from 'react-router-dom'
 import NavBar from '../components/NavBar/navBar'
 import HomePage from '../Views/HomePage/homePage'
 import AboutPage from '../Views/AboutPage/aboutPage'
+import Portfolios from '../Views/Portfolios/portfoliosPage'
 import './app.css'
+import Contact from '../Views/Contact/contactPage'
 
 const App = () => {
   const h = 'hola'
@@ -22,6 +24,12 @@ const App = () => {
             </Route>
             <Route exact path="/About">
               <AboutPage />
+            </Route>
+            <Route exact path="/Portfolios">
+              <Portfolios />
+            </Route>
+            <Route exact path="/Contact">
+              <Contact />
             </Route>
           </Switch>
         </div>

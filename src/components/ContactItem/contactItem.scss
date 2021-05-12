@@ -1,0 +1,30 @@
+.ContactItem {
+  width: 100%;
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  .contact {
+    display: flex;
+    align-items: center;
+    height: 10rem;
+    background-color: #191d2b;
+    padding: 3rem 0;
+    .right-items {
+      margin-left: 2rem;
+      h6 {
+        font-size: 2rem;
+        font-weight: 500;
+      }
+    }
+    img {
+      padding: 1rem;
+      border: 1px solid #2e344e;
+      margin-left: 2rem;
+      width: 16%;
+    }
+  }
+}
+
+.ContactTitle {
+  margin-bottom: 4rem;
+}

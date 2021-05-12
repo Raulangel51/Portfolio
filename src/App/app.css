@@ -5,6 +5,9 @@
 @import '../Styles/about.scss';
 @import '../Styles/skill.scss';
 @import '../components/ServicesSection/services.scss';
+@import '../Views/Contact/contact.scss';
+@import '../components/ContactItem/contactItem.scss';
+@import '../Views/Portfolios/portfoliosPage.scss';
 
 *{
   padding: 0;
