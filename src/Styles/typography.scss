@@ -4,6 +4,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 80%;
+  display: contents;
 }
 
 .hero-text-container {
@@ -18,8 +19,17 @@
   }
 }
 
+.hero {
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
 .hp-sub-text {
   text-align: center; /* Pendiente revisar si se mira mejor al centro o a la izquierda*/
+  width: 765px;
+  display: table;
+  margin: 0 auto;
 }
 
 .icons {

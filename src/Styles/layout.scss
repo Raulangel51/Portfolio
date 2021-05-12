@@ -5,19 +5,32 @@
     background-color: #191d2b;
     position: fixed;
     border-right: 1px solid #2e344e;
+    z-index: 10;
+    @media screen and (max-width: 1000px) {
+      transform: translateX(-400%);;      
+    }
   }
 
   .main-content {
-    width: 84%;
+    width: 1247px;
+    min-width: 84vw;
     margin-left: 16%;
     background-color: #10121b;
     min-height: 100vh;
     background-image: url(../../assets/Images/dots.svg);
-    background-size: contain;
-    display: grid;
-    position: relative;
+    background-size: auto;
+    // display: grid;
+    display: flex; 
+    position: inherit;
     .content {
+      display: flex;
       margin: 5rem 15rem;
+    }
+    @media screen and (max-width: 1000px) {
+      margin-left: 0;
+      position: inherit;
+      width: fit-content; /* Para contener todo mi texto se pre define */    
+      min-width: 795px;
     }
   }
 }
