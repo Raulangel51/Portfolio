@@ -7,8 +7,22 @@
     position: fixed;
     border-right: 1px solid #2e344e;
     z-index: 10;
+    transform-origin: left;
     @media screen and (max-width: 1000px) {
-      transform: translateX(-400%);;      
+      transform: translateX(-400%);
+      transition: all .4s ease-in-out;
+      width: 30%; /* probar con 40vw */   
+    }
+    @media screen and (max-width: 411px) {
+         width: 50vw;
+
+    }
+  }
+  .nav-toggle {
+    @media screen and (max-width: 1000px) {
+      transform: translateX(0);
+      transition: all .4s ease-in-out;
+      z-index: 10;
     }
   }
 
@@ -34,6 +48,37 @@
       position: inherit;
       width: fit-content; /* Para contener todo mi texto se pre define */    
       min-width: 795px;
+    }
+  }
+}
+
+.nav-btn {
+  position: absolute;
+  z-index: 11;
+  right: 5%; /* anterior 10% */
+  top: 5%; /* 10% */
+  width: 4rem;
+  height: 4rem;
+  display: none;
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  cursor: pointer;
+  .lines-1, .lines-2, .lines-3 {
+    height: .4rem;
+    width: 100%;
+    background-color: #3858cc;
+    pointer-events: none;
+    display: none;
+    border-radius: 20px;
+    &:not(:last-child) {
+      margin-bottom: .5rem;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    display: block;
+    .lines-1, .lines-2, .lines-3 {
+      display: block;
     }
   }
 }

@@ -1,20 +1,28 @@
-/* eslint-disable no-unused-vars */
-import React from 'react'
+import React, { useState } from 'react'
 import { Switch, Route } from 'react-router-dom'
 import NavBar from '../components/NavBar/navBar'
 import HomePage from '../Views/HomePage/homePage'
 import AboutPage from '../Views/AboutPage/aboutPage'
 import Portfolios from '../Views/Portfolios/portfoliosPage'
-import './app.css'
 import Contact from '../Views/Contact/contactPage'
+import './app.css'
 
 const App = () => {
-  const h = 'hola'
+  const [navToggle, setNavToggle] = useState(false)
+
+  const navClick = () => {
+    setNavToggle(!navToggle)
+  }
 
   return (
     <div className="App">
-      <div className="sidebar">
+      <div className={`sidebar ${navToggle ? 'nav-toggle' : ''}`}>
         <NavBar />
+      </div>
+      <div className="nav-btn" role="button" onClick={navClick} aria-hidden="true">
+        <div className="lines-1" />
+        <div className="lines-2" />
+        <div className="lines-3" />
       </div>
       <div className="main-content">
         <div className="content">

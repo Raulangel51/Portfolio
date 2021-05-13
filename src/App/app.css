@@ -8,6 +8,7 @@
 @import '../Views/Contact/contact.scss';
 @import '../components/ContactItem/contactItem.scss';
 @import '../Views/Portfolios/portfoliosPage.scss';
+@import '../components/ContactFrom/ContactForm.scss';
 
 *{
   padding: 0;
@@ -34,4 +35,16 @@ body {
 
 span {
   color: #037fff;
+}
+
+@media screen and (max-width: 411px) {
+  html {
+    font-size: 80%;
+  }  
+}
+
+html {
+  background-color: #10121b;
+  background-image: url(../../assets/Images/dots.svg);
+  height: 100vh;
 }
